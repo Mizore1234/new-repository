@@ -39,4 +39,31 @@
 1. 标题一
    * 标题1.1
    1. 标题1.2
+## 表格
+名称|技能|排名
+--|:--:|--:
+人物1|技能1|1
+人物2|技能2|2
+人物3|技能3|3
 
+
+## 插入代码 <br>
+```c
+    #include<stdio.h>
+    int main()
+    {
+    printf("this is a test");
+    }
+```
+```cpp
+#include<iostream>
+```
+```python
+import <os>
+```
+```bash
+echo "终端测试"
+ps aux
+```
+## 关键字
+这是一段话，我会将`关键字`着重显示
