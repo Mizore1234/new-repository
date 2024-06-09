@@ -8,7 +8,7 @@
 ![提交记录](https://t.tutu.to/img/vaPq4)
 * Branch 分支
   * 分支才是代码文件的第一存储单位，默认仓库主分支为`master`/`main` <br>
-![示意图](https://t.tutu.to/img/valLS)
+![分支示意](https://t.tutu.to/img/valLS)
 以tiktok为例，其他两位协作人员完成所负责的功能后上传仓库，由主管管理 <br>
 # 仓库内容
 1. Code，资源存储，代码资源，二进制，项目管理脚本，许可证等
@@ -19,7 +19,7 @@
 ## 使用git管理私人代码或企业代码
 本地内容 ------->  发布内容 <br>
           git
-
+![管理示意](https://t.tutu.to/img/vaff6)
 本地内容版本新于发布内容，通过git将本地内容上传，完成版本更新
 # 设备认证
 让网站的账户于设备绑定，后续完成代码的管理，上传下载:
@@ -32,10 +32,12 @@ ssh-keygen -t rsa -C "注册邮箱" //创建本地密文
 ssh -T git@github.com //查看是否关联成功
 ```
 # 给仓库起别名，定位目标仓库，方便后续上传
-1. git remote add origin "ssh地址"  为ssh仓库地址创建origin这个别名 <br>
-2. git remote remove origin   删除origin <br>
+```bash
+git remote add origin "ssh地址" //为ssh仓库地址创建origin这个别名
+git remote remove origin  //删除origin
+```
 # 本地设备与云端仓库的交互逻辑
-![示意图](https://t.tutu.to/img/vaIQP)
+![交互示意](https://t.tutu.to/img/vaIQP)
 将代码提交到本地仓库后，本地仓库和云端的默认分支一样，则会合并，如果不一致，则会在云端创建出一个和本地仓库一致的分支，再进行合并 <br>
 # 代码更新的依赖关系被破坏
 本地内容比云端新，则可以完成更新替换，但是直接修改云端内容，会导致本地内容无法再次提交
@@ -46,7 +48,7 @@ git rebase --skip  //忽略新内容，但不能上传
 git rebase --abort //忽略旧版，更新本地后可以上传
 git rebase --continue  //版本合并
 ```
-
+# markdown语言
 
 # 文本修饰符
 # 一级标题
@@ -120,7 +122,7 @@ ps aux
 ## 关键字
 这是一段话，我会将`关键字`着重显示
 
-#### markdown实现代码截图
-![示意1](https://t.tutu.to/img/va7gh)
-![示意2](https://t.tutu.to/img/vaKmQ)
+## markdown实现代码截图
+![markdown示意1](https://t.tutu.to/img/va7gh)
+![markdown示意2](https://t.tutu.to/img/vaKmQ)
 
