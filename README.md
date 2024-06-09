@@ -5,6 +5,12 @@
   * 仓库一般有public、private
 * Commit提交
   * 在对代码进行迭代和修改后，可以通过commit方式来记录，可以回溯代码，有助于观察整个工程的开发流程以及设计流程
+  * 提交流程
+```bash
+git add xx.c
+git commit -m "名字"
+git push origin master
+```
 ![提交记录](https://t.tutu.to/img/vaPq4)
 * Branch 分支
   * 分支才是代码文件的第一存储单位，默认仓库主分支为`master`/`main` <br>
